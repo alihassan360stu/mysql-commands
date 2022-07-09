@@ -1,0 +1,57 @@
+create database student; // create new database
+show databases;       // show all databases
+drop databas <name>;  / / delete database 
+use database name; // change the database use version 
+
+
+CREATE TABLE <name> (id int , name varchar(20) , gender char); // using create table command must need  atleast one row insertion otherwise command not working
+show tables; // to show all the table from database
+drop table <name> // used to delete the table from database
+SELECT * FROM table_name; // used to show the data from table
+SELECT <coloum name> from <table name>; // show specific data from a table
+select distinct gender from stu; // show only different value from a table
+SELECT COUNT(DISTINCT gender) FROM stu; // count different value from a table 
+select * from stu where name="ali hassan"; // if condition is true then select whole row (show)
+select name from stu where name='ali hassan'; // selection plus applying condition on table data 
+
+using logical operator 
+
+select * from stu where id=1 or name="ali hassan"; // i have used or operation logigal or
+select * from stu where id=1 or name="ali hassan"; // i have used and operator  logigal and
+select * from stu where not id=1 and name="ali hassan"; i have used not opeartion logigal not
+
+relational opertor 
+select id from stu where id<2;
+select id from stu where id<=2;
+select id from stu where id>2;
+select id from stu where id>=2;
+select id from stu where id==2;
+select id from stu where id<>2;
+ 
+insert into stu (id,name,gender) values(1,"ali hassan",'m'); // insert data in database according to their coloum
+insert into stu VALUES (2,"murtaza",'m'); // if only adding value not specfing coloums
+
+ select * from stu order by id desc; // sordting in desending order
+ select * from stu order by id desc; // sorting in assecnding order
+
+                          UPDATE COMMAND
+UPDATE stu set id=4; // update the whole colum of id name 
+UPDATE stu set name="anisha",gender='f' where id=7;  upate specific coloum which id is 7 (chang coloum  <name,gender>);
+
+Delete command 
+
+Delete from stu where id =6;  // delete a specific data from a table by using row id
+DELETE FROM Customers; // delete all data from  table
+
+LIMIT COMMAND 
+select * from stu limit 2; // select only two row from a table
+
+
+
+few formulas      in built functions
+
+select sum(id) from stu where id>0; // used to find the sum of the all id number
+select min(id) from stu where id>0; // find minimum value
+select max(id) from stu where id>0;  // find greater value 
+select count(id) from stu where id>0; // count total number id
+select avg(id) from stu where id>0;  // fiind the average
