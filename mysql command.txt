@@ -2,6 +2,7 @@ create database student; // create new database
 show databases;       // show all databases
 drop databas <name>;  / / delete database 
 use database name; // change the database use version 
+i am in love with karachi girl i dint know why ?
 
 
 CREATE TABLE <name> (id int , name varchar(20) , gender char); // using create table command must need  atleast one row insertion otherwise command not working
